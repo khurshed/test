@@ -1,0 +1,13 @@
+how to create virtual host in xamp
+
+C:\xampp\apache\conf\extra
+<VirtualHost *:80>
+    ServerAdmin postmaster@dummy.com
+    DocumentRoot "C:/xampp/htdocs/YiiBackboneBoilerplate/frontend/www"{folder(website) location}
+    ServerName demotest.com (name of host type this to open above website)
+    ServerAlias demotest.com 
+</VirtualHost>
+===================AND==============================
+C:\Windows\System32\drivers\etc
+
+127.0.0.1		admin.demotest.com(for admin) demotest.com(for frontend)

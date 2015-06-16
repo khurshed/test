@@ -1,0 +1,254 @@
+<?php
+Yii::app()->clientscript
+        ->registerCssFile(Yii::app()->theme->baseUrl . '/css/global.css')
+        ->registerCssFile(Yii::app()->theme->baseUrl . '/css/bootstrap.css')
+        ->registerCssFile(Yii::app()->theme->baseUrl . '/css/bootstrap-responsive.css')
+        ->registerCssFile(Yii::app()->theme->baseUrl . '/css/prettify.css')
+        ->registerCssFile(Yii::app()->theme->baseUrl . '/css/meanmenu.css')
+        ->registerCssFile(Yii::app()->theme->baseUrl . '/css/prettyPhoto.css')
+        ->registerCssFile(Yii::app()->theme->baseUrl . '/css/fancyfields.css')
+?>
+<?php
+Yii::app()->clientscript
+        ->registerScriptFile('http://code.jquery.com/jquery-1.9.1.js')
+        ->registerScriptFile('http://code.jquery.com/ui/1.10.3/jquery-ui.js')
+?>
+<!DOCTYPE html>
+<html lang="en" <?php if (Yii::app()->language == 'ar') echo 'dir="rtl"'; ?>>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title><?php echo $this->pageTitle; ?></title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Le styles -->
+        <style>
+            /*body {
+                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar 
+            }*/
+
+            @media (max-width: 980px) {
+                body{
+                    padding-top: 0px;
+                }
+            }
+        </style>
+
+        <!-- Le fav and touch icons -->
+
+
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/bootstrapfront/js/bootstrap.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/themes/bootstrapfront/js/jquery.slimscroll.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/themes/bootstrapfront/js/prettify.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/bootstrapfront/js/jquery.meanmenu.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/themes/bootstrapfront/js/jquery.prettyPhoto.js"></script>
+
+
+        <!--Uncomment when required-->
+        <!--<link rel="apple-touch-icon" href="images/apple-touch-icon.png">-->
+        <!--<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">-->
+        <!--<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51185781-1', 'mallgiftcard.ae');
+  ga('send', 'pageview');
+
+</script>
+
+    </head>
+
+    <body class="homeBg">
+
+        <div id="wrapper">
+            <header>
+
+                <div class="top">
+                    <div class="container">    	
+                        <div class="row">
+                            <div class="span12">                                
+                                <div class="login-registerBtn">
+                                    <ul>
+                                        <li class="faq"><a href="/en/fag-10.html">Faqs</a>
+                                        <li class="login has-dropdown" ><a href="javascript:void(0)">Login</a>
+                                            <ul>
+                                                <li><a href="/site/login/card/uae&bahrain">UAE & Bahrain Mall Gift Card Login</a></li>
+                                                <li class="last"><a href="/site/login/card/1/egypt&oman">Egypt & Oman Mall Gift Card Login</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="common relative remmarginB">
+                    <div class="overlayUp" id="overlayon"></div>
+                    <div class="overlayUp" id="overlayon1"></div>
+                    <div class="bot whiteBg">
+                        <div class="container">    	
+                            <div class="row">
+                                <div class="span12">
+                                    <div class="left">
+                                        <div class="logo">
+                                            <a href= "<?php echo Yii::app()->homeUrl; ?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/maf-logo-2014.png"></a>
+                                        </div>
+                                        <div class="navLinks">
+                                            <a href="#" class="menu" id="topMenu"><em class="sprite">&nbsp;</em></a>
+                                            <div class="clear"></div>
+                                            <ul id="mobLinks">
+                                                <li><a href="<?php echo Yii::app()->homeUrl; ?>">Home</a></li>
+                                                <li><a href="/en/cardinformation-8.html">Card Information</a></li>
+                                                <li><a href="/en/wheretobuy-7.html">Where to Buy</a></li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <nav>
+                                            <ul>
+                                                <li><a href="<?php echo Yii::app()->homeUrl; ?>">Home</a></li>
+                                                <li><a href="/en/cardinformation-8.html">Card Information</a></li>
+                                                <li><a href="/en/wheretobuy-7.html">Where to Buy</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <div class="common relative remmarginB">
+
+                <div class="overlayUp" id="overlayon1"></div>
+                <!--	<div class="navbar navbar-fixed-top">
+                                <div class="navbar-inner">
+                                        <div class="container">
+                                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                </a>
+                                                <a class="brand" href="#"><?php echo Yii::app()->name ?></a>
+                                                <div class="nav-collapse">
+                <?php
+                $this->widget('zii.widgets.CMenu', array(
+                    'htmlOptions' => array('class' => 'nav'),
+                    'activeCssClass' => 'active',
+                    'items' => array(
+                        array('label' => Yii::t('label', 'Home'), 'url' => array('/site/index')),
+                        array('label' => Yii::t('label', 'About'), 'url' => array('/site/page', 'view' => 'about')),
+                        array('label' => Yii::t('label', 'Contact'), 'url' => array('/site/contact')),
+                        array('label' => Yii::t('label', 'Login'), 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
+                        array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+                    ),
+                ));
+                ?>
+                                                    <p class="navbar-text pull-right">
+                <?php $this->widget('common.extensions.LangBox'); ?>
+                                                    </p>
+                <?php if (!Yii::app()->user->isGuest) : ?>
+                                                                            <p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>
+                <?php endif; ?>
+                                                </div>/.nav-collapse 
+                                        </div>
+                                </div>
+                        </div>-->
+
+
+                <?php echo $content ?>
+                <!-- /container -->
+
+
+            </div></div>
+        <footer>
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <div class="left">
+                              <p class="fnt-size11">Copyright &copy 2014 Mallgiftcard.ae <br>All Rights Reserved. </p>
+                            </div>
+                            <div class="right">								
+                                <div class="col">
+                                    <ul>
+                                        <li><a href="http://www.ajmancitycentre.com/" target="_blank">City Centre Ajman</a></li>
+                                        <li><a href="http://www.deiracitycentre.com/" target="_blank">City Centre Deira</a></li>
+                                        <li><a href="http://www.fujairahcitycentre.com/" target="_blank">City Centre Fujairah</a></li>
+                                        <li><a href="http://www.malloftheemirates.com/" target="_blank">Mall of the Emirates</a></li>
+                                        <li><a href="http://www.mirdifcitycentre.com/" target="_blank">City Centre Mirdif</a></li>
+                                        <li><a href="http://www.sharjahcitycentre.com/" target="_blank">City Centre Sharjah</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li><a href="http://www.bahraincitycentre.com/" target="_blank">City Centre Bahrain</a></li>
+                                        <li><a href="http://www.muscatcitycentre.com/" target="_blank">Muscat City Centre</a></li>
+                                        <li><a href="http://www.qurumcitycentre.com/" target="_blank">Qurum City Centre</a></li>
+                                        <li><a href="http://www.alexandriacitycentre.com/" target="_blank">Alexandria City Centre</a></li>
+                                        <li><a href="http://www.maadicitycentre.com/" target="_blank">Maadi City Centre</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li><a href="/en/cardinformation-8.html">Card Introduction</a></li>
+                                        <li><a href="/en/howitworks-3.html">How it works</a></li>
+                                        <li><a href="/en/benefits-9.html">Benefits</a></li>
+                                        <li><a href="/en/help-2.html">Help</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col last">
+                                    <ul>
+                                        <li><a href="/en/fag-10.html">FAQS</a></li>
+                                        <li><a href="/en/wheretobuy-7.html">Where to buy</a></li>
+                                        <li><a href="#">Card Registration</a></li>
+                                        <li><a href="/en/terms-6.html">Terms &amp; Conditions</a></li>										
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clear"></div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
+<script>
+</script>
+
+<script>
+    jQuery(document).ready(function() {
+        //jQuery('header nav').meanmenu();
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    });
+    $("a#topMenu").click(function() {
+        $("#mobLinks").slideToggle();
+        return false;
+    });
+
+    $("body").click(function(e) {
+        if (!$(e.target).is('#mobLinks,#mobLinks *')) {
+            $("#mobLinks").hide();
+        }
+    });
+</script>
